@@ -2,10 +2,10 @@
 #define LISTARRAY_H
 #include <iostream>
 #include <stdexcept>
-#include "List.h"
+#include "Lista.h"
 using namespace std;
 template <typename T>
-class ListArray : public List<T>{
+class ListaArray : public Lista<T>{
 	private:
 		T* arr;
 		int max;
@@ -21,12 +21,12 @@ class ListArray : public List<T>{
 			max = new_size;
 		}
 	public:
-		ListArray(){
+		ListaArray(){
 			arr = new T[MINSIZE];
 			max = MINSIZE; 
 			n = 0;
 		}
-		~ListArray(){
+		~ListaArray(){
 			delete[] arr;
 		}
 		void insert(int pos, T e) override{
@@ -89,7 +89,7 @@ class ListArray : public List<T>{
 				return arr[pos];
 	       		}
 		}
-		friend std::ostream& operator<<(std::ostream &out, const ListArray<T> &list){
+		friend std::ostream& operator<<(std::ostream &out, const ListaArray<T> &lista){
 			out << "[";
 			for(int i = 0; i < list.n; i++){
 				cout << list.arr[i];
