@@ -1,6 +1,6 @@
-bin/testListArray: testListArray.cpp ListArray.h List.h
+bin/testListaArray: testListaArray.cpp ListaArray.h List.h
 	mkdir -p bin
-	g++ -o bin/testListArray testListArray.cpp ListArray.h
+	g++ -o bin/testListaArray testListaArray.cpp ListaArray.h
 
 clean:
 	rm -r *.o *.gch bin
