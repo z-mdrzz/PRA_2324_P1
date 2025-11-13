@@ -86,6 +86,15 @@ public:
 	{
 		insert(0, e);
 	}
+//insertar la funcion del examen capicua_lista
+void capicua_list() override {
+        if (n == 0) return;
+        
+        for (int i = n - 1; i >= 0; i--) {
+            append(get(i));
+        }
+    }
+
 	T remove(int pos) override
 {
     if (pos < 0 || pos >= n) throw std::out_of_range("Posición fuera de rango");
