@@ -13,6 +13,7 @@ class List {
 	    int search(T e);//busca elemento (e)
 	    bool empty();//verifica si esta vacia
 	    int size();//tamaño de (e)
+//funncion capicua_list examen practica
 virtual void capicua_list() = 0;
 };
 #endif
