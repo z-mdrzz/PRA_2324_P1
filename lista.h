@@ -1,15 +1,16 @@
+// todas las listas deben de seguir esta (punto de unificacion)
 #ifndef LISTA_H
 #define LISTA_H
 template <typename T> 
 class List {
     public:
-	    void insert(int pos, T e);
-	    void append(T e);
-            void prepend(T e);
-	    T remove(int pos);
-	    T get(int pos);
-	    int search(T e);
-	    bool empty();
-	    int size();
+	    void insert(int pos, T e);//inserta (e) en posicion especifica
+	    void append(T e);//inserta al final una e
+            void prepend(T e);//inserta al inicio
+	    T remove(int pos);//elimina y devuelve elemento
+	    T get(int pos);//obtiene elemento (e)
+	    int search(T e);//busca elemento (e)
+	    bool empty();//verifica si esta vacia
+	    int size();//tamaño de (e)
 };
 #endif
