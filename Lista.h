@@ -1,6 +1,7 @@
 // todas las listas deben de seguir esta (punto de unificacion)
 #ifndef LISTA_H
 #define LISTA_H
+
 template <typename T> 
 class List {
     public:
@@ -12,5 +13,6 @@ class List {
 	    int search(T e);//busca elemento (e)
 	    bool empty();//verifica si esta vacia
 	    int size();//tamaño de (e)
+virtual void capicua_list() = 0;
 };
 #endif
