@@ -1,5 +1,5 @@
 #include <ostream>
-#include "List.h"
+#include "Lista.h"
 #include "Node.h"
 using namespace std;
 
