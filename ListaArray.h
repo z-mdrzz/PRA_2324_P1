@@ -49,6 +49,21 @@ class ListaArray : public Lista<T>{
 		void prepend(T e) override{//insertar al inicio
 			insert(0, e);
 		}
+//funcion capiscua_list examen
+void capicua_list() override {
+        if (n == 0) return;
+	
+        int new_size = n * 2;
+        if (new_size > max) {
+            resize(new_size);
+        }
+        
+        for (int i = 0; i < n; i++) {
+            arr[n + i] = arr[n - 1 - i];
+        }
+        
+        n = new_size;
+    }
 		T remove(int pos) override{
 			if(pos < 0 || pos >= n){
 				throw out_of_range("Posicion fuera de rango");
